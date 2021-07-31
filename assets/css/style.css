@@ -1,0 +1,213 @@
+/* The CSS after * styles the entire page and is the default styling that may be overwritten by more specific CSS selectors 
+elswhere in this style page.
+*/
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+/*
+ The CSS here makes the background grey.
+*/
+body {
+    background-color: #d9dcd6;
+}
+
+/*
+The CSS here creates padding, which works with four values in a clockwise manner, e.g. 10px 10px 10px 10px -- the first is top,
+the second is right, the third is bottom, and the fourth is left. Because only one value is given, it refers to the padding above
+the content of this element. I believe that having multiple fonts will allow for back-up fonts if the given font presented first
+is not available for proprietary reasons. We also set the background color of the header are to a darker color while making the 
+font color white. 
+*/ 
+.header {
+    padding: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: #2a607c;
+    color: #ffffff;
+}
+
+/*
+By setting the h1 display to inline-block so that each element will fall on the same line, like an inline element, but by making 
+it inline-block it will also try to fill up its alloted space, whereas an inline element would let things wrap around it.
+*/
+.header h1 {
+    display: inline-block;
+    font-size: 48px;
+}
+
+/*
+The CSS code below makes it so the letters seo within the main heading of Horiseon are a grey color. 
+*/
+.header h1 .seo {
+    color: #d9dcd6;
+}
+
+/*
+The CSS code below makes space between the content of the element and the top and right sides.
+The float property being set to right means that the element will be moved to the right side
+of it's container. The fonts are selected and given size.
+*/
+.header nav {
+    padding-top: 15px;
+    margin-right: 20px;
+    float: right;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+}
+
+/*
+The CSS code below makes it so that the links at the top of the page are listed without any
+specific style, on the contrary, you could have symbols infront of the listed words, these
+could be anything from hollow circles to little graphical images of spaceships.
+*/
+.header nav ul {
+    list-style-type: none;
+}
+
+/*
+The CSS code below sets the display to inline-block allowing the text in the header to sit
+side-by-side, rather than taking up an entire new line by themselves. Adding margin on the 
+left will accomplish pushing other elements away from any given element, whereas padding will
+create space around the content of elements within their own box, this will put space between
+the boxes themselves.
+*/
+.header nav ul li {
+    display: inline-block;
+    margin-left: 25px;
+}
+
+/*
+The default of links is to change their color and give them an underline, the code below strips
+the links of that. 
+*/
+
+a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+/*
+The CSS code below will set the font for all paragraph elements in the entire document.
+*/
+p {
+    font-size: 16px;
+}
+
+/*
+The CSS code below brings in the main large image seen near the top of the page, sets it height
+and makes it's width the entirety of the .hero container. The code also makes it separate from 
+the elements beneath it and makes sure the image isn't zoomed in excessively. 
+*/
+.hero {
+    
+    height: 800px;
+    width: 100%;
+    margin-bottom: 25px;
+    background-image: url("../images/digital-marketing-meeting.jpg");
+    background-size: cover;
+    background-position: center;
+    
+}
+
+/*
+The CSS code below assigns the width of the content within the content element, sets it to be
+inline block, and separates it from other containers on the left.
+*/
+.content {
+    width: 75%;
+    display: inline-block;
+    margin-left: 20px;
+}
+
+/*
+The CSS code below makes the content within the float-left element hug the left side of it's 
+container, and puts a gap between it and the containers to the right of it.
+*/
+.float-left {
+    float: left;
+    margin-right: 25px;
+}
+
+/*
+The CSS code below makes the content within the float-right element hug the right side of it's 
+container, and puts a gap between it and the containers to the left of it.
+*/
+.float-right {
+    float: right;
+    margin-left: 25px;
+}
+
+/*
+The CSS code below puts space between itself and the other elements beneath is and creates a gap 
+between the content of the element and the borders of it's own container. The code gives the element
+a defined hieght and sets it's fonts to be used, and give background and font color. This code takes 
+care of the SEO articles, the online reputational management article, and the social media marketing
+article.
+*/
+.qualities {
+    margin-bottom: 20px;
+    padding: 50px;
+    height: 300px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #0072bb;
+    color: #ffffff;
+    
+}
+
+.qualities h2 {
+    margin-bottom: 20px;
+    font-size: 36px;
+}
+
+.qualities img {
+    max-height: 200px;
+}
+
+.benefits {
+    margin-right: 20px;
+    padding: 20px;
+    clear: both;
+    float: right;
+    width: 20%;
+    height: 100%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #2589bd;
+}
+
+.benefits {
+    margin-bottom: 32px;
+    color: #ffffff;
+}
+
+.benefits h3 {
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.benefits img {
+    display: block;
+    margin: 10px auto;
+    max-width: 150px;
+}
+
+/*
+The code below gives the footer content a gap between it's content and it's container border,
+it sets text to be centered and gives them their font style and makes sure that the content 
+of this element is not pushed around by other floating elements.
+*/
+.footer {
+    padding: 30px;
+    clear: both;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+}
+
+/*
+The code below gives the h4 of the footer a slightly large font size than the paragraphs 
+within the html document.
+*/
+.footer h4 {
+    font-size: 20px;
+}
